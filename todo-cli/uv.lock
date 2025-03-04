@@ -1,0 +1,20 @@
+version = 1
+revision = 1
+requires-python = ">=3.13"
+
+[[package]]
+name = "clik"
+version = "0.92.4"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/a7/5d/c055f77bbdca6d0bfd5cf2311979e9cb56413752605109e1fcb85bc9c01b/clik-0.92.4.tar.gz", hash = "sha256:eee8049cc2bfce4e4cf9c90efc965ba742321e6768d4771b909f3db7741209f4", size = 12375 }
+
+[[package]]
+name = "todo-cli"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "clik" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "clik", specifier = ">=0.92.4" }]
